@@ -1,12 +1,18 @@
+import CTA from "../../components/CTA";
+import Details from "../../components/Details";
+import Features from "../../components/Features";
 import Header from "../../components/Header";
 import Partners from "../../components/Partners";
 
 const HomePage = () => {
   return (
-    <div>
+    <main>
       <Header />
       <Partners/>
-    </div>
+      <Details/>
+      <Features/>
+      <CTA/>
+    </main>
   );
 };
 

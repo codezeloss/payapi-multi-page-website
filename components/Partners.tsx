@@ -5,11 +5,12 @@ import hp from "/assets/shared/desktop/hewlett-packard.svg";
 import oracle from "/assets/shared/desktop/oracle.svg";
 import google from "/assets/shared/desktop/google.svg";
 import nvidia from "/assets/shared/desktop/nvidia.svg";
+import Link from "next/link";
 
 const Partners = () => {
   return (
-    <div className="bg-mirage-blue py-[100px]">
-      <div className="customSpace  text-white flex items-center justify-between">
+    <div className="bg-mirage-blue py-[100px] mb-[150px]">
+      <section className="customSpace  text-white flex items-center justify-between">
         <div className="max-w-[445px]">
           <h3 className="text-white mb-[24px]">Who we work with</h3>
 
@@ -20,9 +21,11 @@ const Partners = () => {
             experiences for their users.
           </p>
 
-          <button className="font-public-sans font-bold text-[15px] text-water-white leading-[18px] tracking-[-0.115385px] rounded-[24px] border-[1px] border-water-white py-[14px] px-[32px] hover:bg-white hover:text-mirage-blue">
-            AboutUs
-          </button>
+          <Link href="/about">
+            <a className="font-public-sans font-bold text-[15px] text-water-white leading-[18px] tracking-[-0.115385px] rounded-[24px] border-[1px] border-water-white py-[14px] px-[32px] hover:bg-white hover:text-mirage-blue">
+              AboutUs
+            </a>
+          </Link>
         </div>
 
         <div className="space-y-[39px]">
@@ -38,47 +41,54 @@ const Partners = () => {
             </div>
             <div className="w-[145px] h-[31px]">
               <Image
-              className="max-w-0 max-h-0 min-w-0 min-h-0"
-              src={microsoft}
-              alt="Tesla logo"
-              width="145px"
-              height="31px"
-            /></div>
+                className="max-w-0 max-h-0 min-w-0 min-h-0"
+                src={microsoft}
+                alt="Tesla logo"
+                width="145px"
+                height="31px"
+              />
+            </div>
             <div className="w-[140px] h-[27px]">
               <Image
-              className="max-w-0 max-h-0 min-w-0 min-h-0"
-              src={hp}
-              alt="Tesla logo"
-              width="140px"
-              height="27px"
-            />
+                className="max-w-0 max-h-0 min-w-0 min-h-0"
+                src={hp}
+                alt="Tesla logo"
+                width="140px"
+                height="27px"
+              />
             </div>
           </div>
           <div className="flex gap-[85px] items-center">
-            <div className="w-[131px] h-[17px]"><Image
-              className="max-w-0 max-h-0 min-w-0 min-h-0"
-              src={oracle}
-              alt="Tesla logo"
-              width="131px"
-              height="17px"
-            /></div>
-            <div className="w-[96px] h-[33px]"><Image
-              className="max-w-0 max-h-0 min-w-0 min-h-0"
-              src={google}
-              alt="Tesla logo"
-              width="96px"
-              height="33px"
-            /></div>
-            <div className="w-[137px] h-[26px]"><Image
-              className="max-w-0 max-h-0 min-w-0 min-h-0"
-              src={nvidia}
-              alt="Tesla logo"
-              width="137px"
-              height="26px"
-            /></div>
+            <div className="w-[131px] h-[17px]">
+              <Image
+                className="max-w-0 max-h-0 min-w-0 min-h-0"
+                src={oracle}
+                alt="Tesla logo"
+                width="131px"
+                height="17px"
+              />
+            </div>
+            <div className="w-[96px] h-[33px]">
+              <Image
+                className="max-w-0 max-h-0 min-w-0 min-h-0"
+                src={google}
+                alt="Tesla logo"
+                width="96px"
+                height="33px"
+              />
+            </div>
+            <div className="w-[137px] h-[26px]">
+              <Image
+                className="max-w-0 max-h-0 min-w-0 min-h-0"
+                src={nvidia}
+                alt="Tesla logo"
+                width="137px"
+                height="26px"
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

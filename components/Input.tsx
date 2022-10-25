@@ -1,6 +1,6 @@
-import CTAButton from "./CTAButton";
+import Button from "./Button";
 
-const CTAInput = () => {
+const Input = () => {
   return (
     <div className="input-box flex flex-row justify-between items-center outline-none mr-auto">
       <div>
@@ -11,9 +11,9 @@ const CTAInput = () => {
         />
       </div>
 
-      <CTAButton text="Schedule a Demo" />
+      <Button text="Schedule a Demo" />
     </div>
   );
 };
 
-export default CTAInput;
+export default Input;
