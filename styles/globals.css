@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #edf3f8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  h1 {
+    @apply text-[72px] font-dm-serif font-normal leading-[72px] tracking-[-0.553846px] text-sj-blue;
+  }
+
+  h2 {
+    @apply text-[56px] font-dm-serif font-normal leading-[56px] tracking-[-0.430769px] text-sj-blue;
+  }
+
+  h3 {
+    @apply text-[48px] font-dm-serif font-normal leading-[56px] tracking-[-0.369231px] text-sj-blue;
+  }
+
+  .ptext {
+    @apply text-[15px] font-public-sans font-normal leading-[28px];
+  }
+
+  .customSpace {
+    @apply max-w-[1138.8px] mx-auto px-[1.8rem];
+  }
+
+  .input-box {
+    @apply max-w-[445px] h-[48px] bg-white rounded-[24px] pl-[27px];
+  }
+
+  input::placeholder {
+    @apply font-public-sans font-bold text-[15px] leading-[18px] text-sj-blue/[.5];
+  }
+}
