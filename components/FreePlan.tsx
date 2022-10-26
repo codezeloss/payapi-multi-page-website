@@ -1,5 +1,5 @@
 import Image from "next/image";
-import PricingButton from "./PricingButton";
+import CTMButton from "./CTMButton";
 import PricingPlan from "./PricingPlan";
 import iconCheck from "/assets/shared/desktop/icon-check.svg";
 
@@ -77,7 +77,7 @@ const FreePlan = () => {
         </div>
       </div>
 
-      <PricingButton/>
+      <CTMButton text="Request Access"/>
     </div>
   );
 };

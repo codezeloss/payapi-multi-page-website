@@ -1,14 +1,16 @@
 import Image from "next/image";
-import PricingButton from "./PricingButton";
+import CTMButton from "./CTMButton";
 import PricingPlan from "./PricingPlan";
 import iconCheck from "/assets/shared/desktop/icon-check.svg";
 
 const BasicPlan = () => {
   return (
     <div className="max-w-[350px]">
-      <PricingPlan title="Basic Plan"
+      <PricingPlan
+        title="Basic Plan"
         description="Launch your project with unlimited requests and no contractual minimums"
-        price="249.00"/>
+        price="249.00"
+      />
 
       <div className="border-b-[1px] border-b-sj-blue/[.25] space-y-[8px]">
         <div className="flex flex-row gap-[24px]">
@@ -58,7 +60,7 @@ const BasicPlan = () => {
 
         <div className="flex flex-row gap-[24px]">
           <div className="w-[12px] h-[8px]">
-            <div/>
+            <div />
           </div>
           <p className="font-public-sans font-normal text-[16px] leading-[28px] text-sj-blue/[.25]">
             Liabilities
@@ -67,7 +69,7 @@ const BasicPlan = () => {
 
         <div className="flex flex-row gap-[24px] pb-[24px]">
           <div className="w-[12px] h-[8px]">
-            <div/>
+            <div />
           </div>
           <p className="font-public-sans font-normal text-[16px] leading-[28px] text-sj-blue/[.25]">
             Income
@@ -75,7 +77,7 @@ const BasicPlan = () => {
         </div>
       </div>
 
-      <PricingButton/>
+      <CTMButton text="Request Access"/>
     </div>
   );
 };

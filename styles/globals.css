@@ -37,7 +37,11 @@ a {
   }
 
   h4 {
-    @apply font-dm-serif font-normal text-[32px] leading-[40px] tracking-[-0.246154px]
+    @apply font-dm-serif font-normal text-[32px] leading-[40px] tracking-[-0.246154px];
+  }
+
+  h5 {
+    @apply font-dm-serif font-normal text-[24px] leading-[32px] tracking-[-0.184615px] text-sj-blue/[.75];
   }
 
   .ptext {
@@ -54,5 +58,29 @@ a {
 
   input::placeholder {
     @apply font-public-sans font-bold text-[15px] leading-[18px] text-sj-blue/[.5];
+  }
+
+  .form input::placeholder {
+    @apply font-public-sans font-normal text-[15px] leading-[18px] text-sj-blue/[.5];
+  }
+
+  .input01 {
+    @apply px-[20px] pb-[17px] outline-none bg-bodybgcolor text-sj-blue border-b-[1px] border-b-sj-blue/[.5];
+  }
+
+  .valid-border {
+    @apply border-b-[1px] border-b-sj-blue/[.5];
+  }
+
+  .error-border {
+    @apply border-b-[1px] border-b-error-red/[.5];
+  }
+
+  .inputplace::placeholder {
+    @apply text-error-red/[.5] font-normal;
+  }
+
+  .error-message {
+    @apply text-error-red/[.5] font-public-sans font-normal text-[11px] leading-[13px] tracking-[-0.0846154px] mt-[8px] ml-[20px];
   }
 }

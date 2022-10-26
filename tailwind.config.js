@@ -13,6 +13,8 @@ module.exports = {
       "lightsj-blue": "#6c8294",
       "sj-blue": "#36536b",
       "mirage-blue": "#1b262f",
+      "bodybgcolor": "#edf3f8",
+      "error-red": "#FF0000"
     },
     fontFamily: {
       "dm-serif": ["DM Serif Display", "sans-serif"],

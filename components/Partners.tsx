@@ -1,10 +1,10 @@
 import Image from "next/image";
-import tesla from "/assets/shared/desktop/tesla.svg";
-import microsoft from "/assets/shared/desktop/microsoft.svg";
-import hp from "/assets/shared/desktop/hewlett-packard.svg";
-import oracle from "/assets/shared/desktop/oracle.svg";
-import google from "/assets/shared/desktop/google.svg";
-import nvidia from "/assets/shared/desktop/nvidia.svg";
+import tesla from "/assets/shared/desktop/tesla-white.svg";
+import microsoft from "/assets/shared/desktop/microsoft-white.svg";
+import hp from "/assets/shared/desktop/hewlett-packard-white.svg";
+import oracle from "/assets/shared/desktop/oracle-white.svg";
+import google from "/assets/shared/desktop/google-white.svg";
+import nvidia from "/assets/shared/desktop/nvidia-white.svg";
 import Link from "next/link";
 
 const Partners = () => {
