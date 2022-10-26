@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CTA from "../../components/CTA";
+import CTA from "../../components/UserCTA";
 import Form from "../../components/Form";
 import tesla from "/assets/shared/desktop/tesla.svg";
 import microsoft from "/assets/shared/desktop/microsoft.svg";

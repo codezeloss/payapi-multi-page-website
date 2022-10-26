@@ -1,4 +1,4 @@
-import CTA from "../../components/CTA";
+import CTA from "../../components/UserCTA";
 import Details from "../../components/Details";
 import Features from "../../components/Features";
 import Header from "../../components/Header";
@@ -8,10 +8,10 @@ const HomePage = () => {
   return (
     <main>
       <Header />
-      <Partners/>
-      <Details/>
-      <Features/>
-      <CTA/>
+      <Partners />
+      <Details />
+      <Features />
+      <CTA />
     </main>
   );
 };

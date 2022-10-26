@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CTA from "../../components/CTA";
+import CTA from "../../components/UserCTA";
 import Stats from "../../components/Stats";
 import team from "/assets/about/desktop/image-team-members.jpg";
 

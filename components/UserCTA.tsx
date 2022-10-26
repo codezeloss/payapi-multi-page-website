@@ -1,6 +1,6 @@
 import Input from "./Input";
 
-const CTA = () => {
+const UserCTA = () => {
   return (
     <section className="w-[100%] flex items-center justify-between mb-[96px]">
       <h3>Ready to start?</h3>
@@ -12,4 +12,4 @@ const CTA = () => {
   );
 };
 
-export default CTA;
+export default UserCTA;

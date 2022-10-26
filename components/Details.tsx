@@ -1,6 +1,6 @@
 import Image from "next/image";
-import codeAPI from "/assets/home/desktop/illustration-easy-to-implement-1.png";
-import twoPhones from "/assets/home/desktop/illustration-simple-ui-1.png";
+import codeAPI from "/assets/home/desktop/illustration-easy-to-implement.png";
+import twoPhones from "/assets/home/desktop/illustration-simple-ui.png";
 
 const Details = () => {
   return (
@@ -8,7 +8,7 @@ const Details = () => {
       <section className="flex items-center mb-[150px] gap-[125px]">
         <div className="w-[445px] h-[281px]">
           <Image
-            className="w-[445px] h-[281px]"
+            className="w-fit h-fit"
             src={codeAPI}
             alt="Code exmaple"
             width="445px"
@@ -37,7 +37,7 @@ const Details = () => {
 
         <div className="w-[566px] h-[500px]">
           <Image
-            className="w-[566px] h-[500px]"
+            className="w-fit h-fit"
             src={twoPhones}
             alt="Two phones"
             width="566px"
