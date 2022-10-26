@@ -36,6 +36,10 @@ a {
     @apply text-[48px] font-dm-serif font-normal leading-[56px] tracking-[-0.369231px] text-sj-blue;
   }
 
+  h4 {
+    @apply font-dm-serif font-normal text-[32px] leading-[40px] tracking-[-0.246154px]
+  }
+
   .ptext {
     @apply text-[15px] font-public-sans font-normal leading-[28px];
   }

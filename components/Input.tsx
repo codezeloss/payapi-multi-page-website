@@ -1,4 +1,4 @@
-import Button from "./Button";
+import CTAButton from "./CTAButton";
 
 const Input = () => {
   return (
@@ -11,7 +11,7 @@ const Input = () => {
         />
       </div>
 
-      <Button text="Schedule a Demo" />
+      <CTAButton text="Schedule a Demo" />
     </div>
   );
 };
