@@ -7,9 +7,7 @@ interface Props {
 const PricingPlan = ({ title, description, price }: Props) => {
   return (
     <div className="mb-[24px]">
-      <h4 className="text-dark-pink mb-[16px]">
-        {title}
-      </h4>
+      <h5 className="text-dark-pink mb-[16px]">{title}</h5>
 
       <p className="ptext text-lightsj-blue mb-[8px]">{description}</p>
 

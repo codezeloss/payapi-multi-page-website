@@ -23,6 +23,7 @@ module.exports = {
     screens: {
       "1bp": { max: "1074px" },
       "2bp": { max: "910px" },
+      "3bp": { max: "700px" },
     },
     extend: {},
   },

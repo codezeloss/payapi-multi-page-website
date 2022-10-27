@@ -12,8 +12,8 @@ const Footer = () => {
 
   return (
     <div className="bg-mirage-blue">
-      <div className="customSpace py-[31px] flex items-center justify-between">
-        <div className="flex items-center space-x-[64.34px]">
+      <div className="customSpace py-[31px] flex items-center justify-between 3bp:flex-col 3bp:gap-[40px]">
+        <div className="flex items-center space-x-[64.34px] 3bp:flex-col 3bp:space-x-0">
           <Link href="/">
             <Image
               className="text-white"
@@ -24,27 +24,33 @@ const Footer = () => {
             />
           </Link>
 
-          <div className="font-public-sans font-bold text-[15px] leading-[18px] text-water-white/[.7] flex space-x-[40px]">
+          <div className="font-public-sans font-bold text-[15px] leading-[18px] text-water-white/[.7] flex space-x-[40px] 3bp:flex-col 3bp:items-center 3bp:space-x-0 3bp:mt-[40px] 3bp:gap-[31px]">
             <Link href="/pricing">
-              <a className={`hover:text-water-white ${
-                currentRoute === "/pricing"
-                  ? "text-water-white"
-                  : ""
-              }`}>Pricing</a>
+              <a
+                className={`hover:text-water-white ${
+                  currentRoute === "/pricing" ? "text-water-white" : ""
+                }`}
+              >
+                Pricing
+              </a>
             </Link>
             <Link href="/about">
-              <a className={`hover:text-water-white ${
-                currentRoute === "/about"
-                  ? "text-water-white"
-                  : ""
-              }`}>About</a>
+              <a
+                className={`hover:text-water-white ${
+                  currentRoute === "/about" ? "text-water-white" : ""
+                }`}
+              >
+                About
+              </a>
             </Link>
             <Link href="/contact">
-              <a className={`hover:text-water-white ${
-                currentRoute === "/contact"
-                  ? "text-water-white"
-                  : ""
-              }`}>Contact</a>
+              <a
+                className={`hover:text-water-white ${
+                  currentRoute === "/contact" ? "text-water-white" : ""
+                }`}
+              >
+                Contact
+              </a>
             </Link>
           </div>
         </div>

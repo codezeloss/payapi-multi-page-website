@@ -1,12 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useState } from "react";
 import CTAButton from "./CTAButton";
 import logo from "/assets/shared/desktop/logo.svg";
+import menuIcon from "/assets/shared/mobile/menu.svg";
+import closeIcon from "/assets/shared/mobile/close.svg";
+import Menu from "./Menu";
 
 const Navbar = () => {
+  const [menuDisplayed, menuIsDisplayed] = useState<boolean>(false);
+
   const router = useRouter();
   const currentRoute = router.pathname;
+
+  const menuToggle = () => {
+    menuIsDisplayed((prevState) => !prevState);
+  };
 
   return (
     <div className="customSpace flex justify-between items-center mt-[45px] mb-[152px] 2bp:mb-[48px]">
@@ -21,34 +31,61 @@ const Navbar = () => {
           />
         </Link>
 
-        <div className="font-public-sans font-bold text-[15px] leading-[18px] text-sj-blue/[.7] flex space-x-[40px]">
+        <div className="font-public-sans font-bold text-[15px] leading-[18px] text-sj-blue/[.7] flex space-x-[40px] 3bp:hidden">
           <Link href="/pricing">
-            <a className={`hover:text-sj-blue ${
-                currentRoute === "/pricing"
-                  ? "text-sj-blue"
-                  : ""
-              }`}>Pricing</a>
+            <a
+              className={`hover:text-sj-blue ${
+                currentRoute === "/pricing" ? "text-sj-blue" : ""
+              }`}
+            >
+              Pricing
+            </a>
           </Link>
           <Link href="/about">
-            <a className={`hover:text-sj-blue ${
-                currentRoute === "/about"
-                  ? "text-sj-blue"
-                  : ""
-              }`}>About</a>
+            <a
+              className={`hover:text-sj-blue ${
+                currentRoute === "/about" ? "text-sj-blue" : ""
+              }`}
+            >
+              About
+            </a>
           </Link>
           <Link href="/contact">
-            <a className={`hover:text-sj-blue ${
-                currentRoute === "/contact"
-                  ? "text-sj-blue"
-                  : ""
-              }`}>Contact</a>
+            <a
+              className={`hover:text-sj-blue ${
+                currentRoute === "/contact" ? "text-sj-blue" : ""
+              }`}
+            >
+              Contact
+            </a>
           </Link>
         </div>
       </div>
 
-      <div>
-        <CTAButton text="Schedule a Demo" />
+      <div className="3bp:hidden">
+        <CTAButton />
       </div>
+
+      {!menuDisplayed && (
+        <div
+          className="hidden 3bp:flex w-[28px] h-[17px] cursor-pointer"
+          onClick={menuToggle}
+        >
+          <Image
+            className="w-fit h-fit"
+            src={menuIcon}
+            alt="Menu"
+            width="28px"
+            height="17px"
+          />
+        </div>
+      )}
+
+      {menuDisplayed && (
+        <div>
+          <Menu showMenu={menuToggle}/>
+        </div>
+      )}
     </div>
   );
 };

@@ -16,7 +16,7 @@ const Details = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <div className="w-[445px] h-[281px] 2bp:w-[391.73px] 2bp:h-[250px]">
+        <div className="w-[445px] h-[281px] 2bp:w-[391.73px] 2bp:h-[250px] 3bp:w-[328px] 3bp:h-[209px]">
           <Image
             className="w-fit h-fit"
             src={codeAPI}
@@ -26,7 +26,7 @@ const Details = () => {
           />
         </div>
 
-        <div className="w-[445px] 2bp:text-center 2bp:w-[573px]">
+        <div className="w-[445px] 2bp:text-center 2bp:w-[573px] 3bp:w-[100%]">
           <h3 className="mb-[24px]">Easy to implement</h3>
           <p className="ptext">
             Our API comes with just a few lines of code. You’ll be up and
@@ -46,7 +46,7 @@ const Details = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <div className="w-[445px] 2bp:text-center 2bp:w-[573px]">
+        <div className="w-[445px] 2bp:text-center 2bp:w-[573px] 3bp:w-[100%]">
           <h3 className="mb-[24px]">Simple UI & UX</h3>
           <p className="ptext">
             Our pre-built form is easy to integrate in your app or website’s
@@ -54,7 +54,7 @@ const Details = () => {
           </p>
         </div>
 
-        <div className="w-[566px] h-[500px] 1bp:w-[363px] 1bp:h-[320px]">
+        <div className="w-[566px] h-[500px] 1bp:w-[363px] 1bp:h-[320px] 3bp:w-[328px] 3bp:h-[290px]">
           <Image
             className="w-fit h-fit"
             src={twoPhones}

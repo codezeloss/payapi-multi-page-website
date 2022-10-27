@@ -11,7 +11,7 @@ const Input = () => {
         />
       </div>
 
-      <CTAButton text="Schedule a Demo" />
+      <CTAButton />
     </div>
   );
 };

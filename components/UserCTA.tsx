@@ -11,7 +11,7 @@ const UserCTA = () => {
       delay: 0.5,
       ease: [0, 0.71, 0.2, 1.01],
     }}>
-      <h3>Ready to start?</h3>
+      <h4>Ready to start?</h4>
 
       <div>
         <Input />

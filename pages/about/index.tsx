@@ -13,14 +13,14 @@ const About = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.5, ease: [0, 0.71, 0.2, 1.01] }}
         >
-          <h2 className="max-w-[644px] h-[189px] mb-[51px]">
+          <h2 className="max-w-[644px] h-[189px] mb-[51px] 2bp:text-center 2bp:mx-auto 2bp:max-w-[537px]">
             We empower innovators by delivering access to the financial system
           </h2>
         </motion.div>
 
         <div className="space-y-[56px] mb-[100px]">
           <motion.div
-            className="flex flex-row justify-between"
+            className="flex flex-row justify-between 3bp:flex-col 3bp:text-center"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -29,7 +29,9 @@ const About = () => {
               ease: [0, 0.71, 0.2, 1.01],
             }}
           >
-            <h4 className="text-sj-blue">Our Vision</h4>
+            <div className="2bp:min-w-[220px]">
+              <h4 className="text-sj-blue">Our Vision</h4>
+            </div>
             <div className="max-w-[635px]">
               <p className="ptext text-lightsj-blue">
                 Our main goal is to build beautiful consumer experiences along
@@ -42,7 +44,7 @@ const About = () => {
           </motion.div>
 
           <motion.div
-            className="flex flex-row justify-between"
+            className="flex flex-row justify-between 3bp:flex-col 3bp:text-center"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -51,7 +53,9 @@ const About = () => {
               ease: [0, 0.71, 0.2, 1.01],
             }}
           >
-            <h4 className="text-sj-blue">Our Business</h4>
+            <div className="2bp:min-w-[220px]">
+              <h4 className="text-sj-blue">Our Business</h4>
+            </div>
             <div className="max-w-[635px]">
               <p className="ptext text-lightsj-blue">
                 At the core of our platform is the technical infrastructure APIs
@@ -95,7 +99,7 @@ const About = () => {
 
           <div className="space-y-[56px] mb-[100px]">
             <motion.div
-              className="flex flex-row justify-between"
+              className="flex flex-row justify-between 3bp:flex-col 3bp:text-center"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
@@ -104,7 +108,9 @@ const About = () => {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
             >
-              <h4 className="text-sj-blue">The Culture</h4>
+              <div className="2bp:min-w-[220px]">
+                <h4 className="text-sj-blue">The Culture</h4>
+              </div>
               <div className="max-w-[635px]">
                 <p className="ptext text-lightsj-blue">
                   We strongly believe there iss always an opportunity to learn
@@ -117,7 +123,7 @@ const About = () => {
             </motion.div>
 
             <motion.div
-              className="flex flex-row justify-between"
+              className="flex flex-row justify-between 3bp:flex-col 3bp:text-center"
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
@@ -126,7 +132,9 @@ const About = () => {
                 ease: [0, 0.71, 0.2, 1.01],
               }}
             >
-              <h4 className="text-sj-blue">The People</h4>
+              <div className="2bp:min-w-[220px]">
+                <h4 className="text-sj-blue">The People</h4>
+              </div>
               <div className="max-w-[635px]">
                 <p className="ptext text-lightsj-blue">
                   We are all passionate about building a more efficient and

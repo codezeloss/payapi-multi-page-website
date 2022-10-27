@@ -77,7 +77,7 @@ const BasicPlan = () => {
         </div>
       </div>
 
-      <CTMButton text="Request Access" />
+      <CTMButton />
     </div>
   );
 };

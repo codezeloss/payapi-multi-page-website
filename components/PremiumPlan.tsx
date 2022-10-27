@@ -77,7 +77,7 @@ const PremiumPlan = () => {
         </div>
       </div>
 
-      <CTMButton text="Request Access"/>
+      <CTMButton />
     </div>
   );
 };

@@ -21,7 +21,7 @@ const Partners = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <div className="w-[445px] h-[100%] 2bp:w-[457px] 2bp:flex 2bp:flex-col 2bp:justify-center 2bp:text-center">
+        <div className="w-[445px] h-[100%] 2bp:w-[457px] 2bp:flex 2bp:flex-col 2bp:justify-center 2bp:text-center 3bp:w-[100%]">
           <h3 className="text-white mb-[24px]">Who we work with</h3>
 
           <div className="mb-[32px]">
@@ -42,8 +42,8 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="space-y-[39px]">
-          <div className="flex gap-[62px] items-center 1bp:gap-[32px]">
+        <div className="flex gap-[39px] 3bp:flex 3bp:items-center 3bp:gap-[50px]">
+          <div className="flex gap-[62px] items-center 1bp:gap-[32px] 3bp:flex-col 3bp:gap-[40px]">
             <div className="w-[129px] h-[17px]">
               <Image
                 className="max-w-0 max-h-0 min-w-0 min-h-0"
@@ -72,7 +72,7 @@ const Partners = () => {
               />
             </div>
           </div>
-          <div className="flex gap-[85px] items-center 1bp:gap-[54px]">
+          <div className="flex gap-[85px] items-center 1bp:gap-[54px] 3bp:flex-col 3bp:gap-[40px]">
             <div className="w-[131px] h-[17px]">
               <Image
                 className="max-w-0 max-h-0 min-w-0 min-h-0"

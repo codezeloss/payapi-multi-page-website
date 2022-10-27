@@ -14,7 +14,7 @@ const Contact = () => {
     <section>
       <div className="customSpace">
         <motion.div
-          className="h-[100%] 1bp:h-[178px]"
+          className="h-[100%] 1bp:h-[178px] inline"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{
@@ -23,7 +23,7 @@ const Contact = () => {
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
-          <h2 className="max-w-[730px] h-fit mb-[43px] 1bp:mx-auto 1bp:text-center">
+          <h2 className="max-w-[730px] h-fit mb-[43px] 1bp:mx-auto 1bp:text-center 2bp:max-w-[458px]">
             Submit a help request and we’ll get in touch shortly.
           </h2>
         </motion.div>
@@ -55,8 +55,8 @@ const Contact = () => {
             <h5 className="mb-[40px] max-w-[445px] 1bp:text-center 1bp:max-w-[100%]">
               Join the thousands of innovators already building with us
             </h5>
-            <div className="space-y-[39px]">
-              <div className="flex gap-[62px] items-center">
+            <div className="flex flex-col gap-[39px] 3bp:flex-row 3bp:justify-center">
+              <div className="flex gap-[62px] items-center 3bp:flex-col">
                 <div className="w-[130.2px] h-[17px]">
                   <Image
                     className="max-w-0 max-h-0 min-w-0 min-h-0"
@@ -85,7 +85,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div className="flex gap-[85px] items-center">
+              <div className="flex gap-[85px] items-center 3bp:flex-col 3bp:gap-[62px]">
                 <div className="w-[132.22px] h-[17px]">
                   <Image
                     className="max-w-0 max-h-0 min-w-0 min-h-0"

@@ -25,7 +25,7 @@ a {
 
 @layer components {
   h1 {
-    @apply text-[72px] font-dm-serif font-normal leading-[72px] tracking-[-0.553846px] text-sj-blue 2bp:text-[48px] 2bp:leading-[56px] 2bp:text-center;
+    @apply text-[72px] font-dm-serif font-normal leading-[72px] tracking-[-0.553846px] text-sj-blue 2bp:text-[48px] 2bp:leading-[56px] 2bp:text-center 3bp:text-[32px] 3bp:leading-[36px];
   }
 
   h2 {
@@ -33,11 +33,11 @@ a {
   }
 
   h3 {
-    @apply text-[48px] font-dm-serif font-normal leading-[56px] tracking-[-0.369231px] text-sj-blue;
+    @apply text-[48px] font-dm-serif font-normal leading-[56px] tracking-[-0.369231px] text-sj-blue 3bp:text-[36px];
   }
 
   h4 {
-    @apply font-dm-serif font-normal text-[32px] leading-[40px] tracking-[-0.246154px] 2bp:text-[24px];
+    @apply text-[48px] font-dm-serif font-normal leading-[56px] tracking-[-0.369231px] text-sj-blue 3bp:text-[32px];
   }
 
   h5 {

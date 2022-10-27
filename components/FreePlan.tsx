@@ -77,7 +77,7 @@ const FreePlan = () => {
         </div>
       </div>
 
-      <CTMButton text="Request Access"/>
+      <CTMButton/>
     </div>
   );
 };
