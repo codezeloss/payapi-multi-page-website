@@ -10,34 +10,40 @@ import { motion } from "framer-motion";
 
 const Partners = () => {
   return (
-    <div className="bg-mirage-blue py-[100px] mb-[150px]">
-      <motion.section className="customSpace  text-white flex items-center justify-between"
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{
-        duration: 0.8,
-        delay: 0.5,
-        ease: [0, 0.71, 0.2, 1.01],
-      }}>
-        <div className="max-w-[445px]">
+    <div className="bg-mirage-blue py-[100px] mb-[150px] 2bp:mb-[100px]">
+      <motion.section
+        className="customSpace text-white flex items-center justify-between gap-[50px] 2bp:flex-col-reverse 2bp:gap-[64px]"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.5,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+      >
+        <div className="w-[445px] h-[100%] 2bp:w-[457px] 2bp:flex 2bp:flex-col 2bp:justify-center 2bp:text-center">
           <h3 className="text-white mb-[24px]">Who we work with</h3>
 
-          <p className="ptext text-water-white/[.7] mb-[32px]">
-            Today, millions of people around the world have successfully
-            connected their accounts to apps they love using our API. We provide
-            developers with the tools they need to create easy and accessible
-            experiences for their users.
-          </p>
+          <div className="mb-[32px]">
+            <p className="ptext text-water-white/[.7]">
+              Today, millions of people around the world have successfully
+              connected their accounts to apps they love using our API. We
+              provide developers with the tools they need to create easy and
+              accessible experiences for their users.
+            </p>
+          </div>
 
-          <Link href="/about">
-            <a className="font-public-sans font-bold text-[15px] text-water-white leading-[18px] tracking-[-0.115385px] rounded-[24px] border-[1px] border-water-white py-[14px] px-[32px] hover:bg-white hover:text-mirage-blue">
-              AboutUs
-            </a>
-          </Link>
+          <div>
+            <Link href="/about">
+              <a className="inline-block font-public-sans font-bold text-[15px] text-water-white leading-[18px] tracking-[-0.115385px] rounded-[24px] border-[1px] border-water-white py-[14px] px-[32px] hover:bg-white hover:text-mirage-blue">
+                AboutUs
+              </a>
+            </Link>
+          </div>
         </div>
 
         <div className="space-y-[39px]">
-          <div className="flex gap-[62px] items-center">
+          <div className="flex gap-[62px] items-center 1bp:gap-[32px]">
             <div className="w-[129px] h-[17px]">
               <Image
                 className="max-w-0 max-h-0 min-w-0 min-h-0"
@@ -66,7 +72,7 @@ const Partners = () => {
               />
             </div>
           </div>
-          <div className="flex gap-[85px] items-center">
+          <div className="flex gap-[85px] items-center 1bp:gap-[54px]">
             <div className="w-[131px] h-[17px]">
               <Image
                 className="max-w-0 max-h-0 min-w-0 min-h-0"

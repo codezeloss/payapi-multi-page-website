@@ -5,7 +5,7 @@ import iconCheck from "/assets/shared/desktop/icon-check.svg";
 
 const BasicPlan = () => {
   return (
-    <div className="max-w-[350px]">
+    <div className="max-w-[350px] 2bp:w-[223px]">
       <PricingPlan
         title="Basic Plan"
         description="Launch your project with unlimited requests and no contractual minimums"

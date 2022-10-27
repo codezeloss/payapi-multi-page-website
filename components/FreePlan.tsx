@@ -5,7 +5,7 @@ import iconCheck from "/assets/shared/desktop/icon-check.svg";
 
 const FreePlan = () => {
   return (
-    <div className="max-w-[350px]">
+    <div className="max-w-[350px] 2bp:w-[223px]">
       <PricingPlan
         title="Free Plan"
         description="Build and test using our core set of products with up to 100 API requests"

@@ -13,19 +13,16 @@ module.exports = {
       "lightsj-blue": "#6c8294",
       "sj-blue": "#36536b",
       "mirage-blue": "#1b262f",
-      "bodybgcolor": "#edf3f8",
-      "error-red": "#FF0000"
+      bodybgcolor: "#edf3f8",
+      "error-red": "#FF0000",
     },
     fontFamily: {
       "dm-serif": ["DM Serif Display", "sans-serif"],
       "public-sans": ["Public Sans", "sans-serif"],
     },
     screens: {
-      "1bp": { max: "1110px" },
-      "2bp": { max: "870px" },
-      "3bp": { max: "720px" },
-      "4bp": { max: "636px" },
-      "5bp": { max: "375px" },
+      "1bp": { max: "1074px" },
+      "2bp": { max: "910px" },
     },
     extend: {},
   },

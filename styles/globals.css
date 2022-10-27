@@ -25,11 +25,11 @@ a {
 
 @layer components {
   h1 {
-    @apply text-[72px] font-dm-serif font-normal leading-[72px] tracking-[-0.553846px] text-sj-blue;
+    @apply text-[72px] font-dm-serif font-normal leading-[72px] tracking-[-0.553846px] text-sj-blue 2bp:text-[48px] 2bp:leading-[56px] 2bp:text-center;
   }
 
   h2 {
-    @apply text-[56px] font-dm-serif font-normal leading-[56px] tracking-[-0.430769px] text-sj-blue;
+    @apply text-[56px] font-dm-serif font-normal leading-[56px] tracking-[-0.430769px] text-sj-blue 2bp:text-[48px];
   }
 
   h3 {
@@ -37,7 +37,7 @@ a {
   }
 
   h4 {
-    @apply font-dm-serif font-normal text-[32px] leading-[40px] tracking-[-0.246154px];
+    @apply font-dm-serif font-normal text-[32px] leading-[40px] tracking-[-0.246154px] 2bp:text-[24px];
   }
 
   h5 {

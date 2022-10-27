@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const UserCTA = () => {
   return (
-    <motion.section className="customSpace w-[100%] flex items-center justify-between mb-[96px]"
-    nitial={{ opacity: 0, scale: 0.5 }}
+    <motion.section className="customSpace w-[100%] flex items-center justify-between mb-[96px] 2bp:flex-col 2bp:gap-[40px]"
+    initial={{ opacity: 0, scale: 0.5 }}
     animate={{ opacity: 1, scale: 1 }}
     transition={{
       duration: 0.8,

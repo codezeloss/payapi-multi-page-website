@@ -17,9 +17,9 @@ const Pricing = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <h2 className="mb-[72px]">Pricing</h2>
+        <h2 className="mb-[72px] 2bp:text-center">Pricing</h2>
 
-        <div className="flex gap-[30px] mb-[96px]">
+        <div className="flex gap-[30px] mb-[96px] 2bp:gap-[0px] 2bp:justify-between">
           <FreePlan />
           <BasicPlan />
           <PremiumPlan />

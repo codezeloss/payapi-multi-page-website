@@ -5,7 +5,7 @@ import iconCheck from "/assets/shared/desktop/icon-check.svg";
 
 const PremiumPlan = () => {
   return (
-    <div className="max-w-[350px]">
+    <div className="max-w-[350px] 2bp:w-[223px]">
       <PricingPlan
         title="Premium Plan"
         description="Get tailored solutions, volume pricing, and dedicated support for your team "
