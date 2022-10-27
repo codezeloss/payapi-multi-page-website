@@ -39,7 +39,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="w-[263px] h-[500px] 2bp:w-[159px] 2bp:h-[300px]">
+      <div className="min-w-[263px] min-h-[500px] 2bp:min-w-0 2bp:min-h-0 2bp:w-[159px] 2bp:h-[300px]">
         <Image
           className="w-fit h-fit 2bp:w-[159px] 2bp:h-[300px]"
           src={phoneMockup}

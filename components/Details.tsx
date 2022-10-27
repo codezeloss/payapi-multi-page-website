@@ -16,7 +16,7 @@ const Details = () => {
           ease: [0, 0.71, 0.2, 1.01],
         }}
       >
-        <div className="w-[445px] h-[281px] 2bp:w-[391.73px] 2bp:h-[250px] 3bp:w-[328px] 3bp:h-[209px]">
+        <div className="w-[445px] h-[281px] 1bp:w-[391.73px] 1bp:h-[250px] 3bp:w-[328px] 3bp:h-[209px]">
           <Image
             className="w-fit h-fit"
             src={codeAPI}

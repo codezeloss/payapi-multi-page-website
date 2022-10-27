@@ -42,7 +42,7 @@ const Partners = () => {
           </div>
         </div>
 
-        <div className="flex gap-[39px] 3bp:flex 3bp:items-center 3bp:gap-[50px]">
+        <div className="space-y-[39px] 3bp:flex 3bp:space-y-0 3bp:items-center 3bp:gap-[50px]">
           <div className="flex gap-[62px] items-center 1bp:gap-[32px] 3bp:flex-col 3bp:gap-[40px]">
             <div className="w-[129px] h-[17px]">
               <Image
