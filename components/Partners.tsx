@@ -6,11 +6,19 @@ import oracle from "/assets/shared/desktop/oracle-white.svg";
 import google from "/assets/shared/desktop/google-white.svg";
 import nvidia from "/assets/shared/desktop/nvidia-white.svg";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Partners = () => {
   return (
     <div className="bg-mirage-blue py-[100px] mb-[150px]">
-      <section className="customSpace  text-white flex items-center justify-between">
+      <motion.section className="customSpace  text-white flex items-center justify-between"
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}>
         <div className="max-w-[445px]">
           <h3 className="text-white mb-[24px]">Who we work with</h3>
 
@@ -88,7 +96,7 @@ const Partners = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

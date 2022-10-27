@@ -1,4 +1,4 @@
-import CTA from "../../components/UserCTA";
+import UserCTA from "../../components/UserCTA";
 import Details from "../../components/Details";
 import Features from "../../components/Features";
 import Header from "../../components/Header";
@@ -11,7 +11,7 @@ const HomePage = () => {
       <Partners />
       <Details />
       <Features />
-      <CTA />
+      <UserCTA />
     </main>
   );
 };

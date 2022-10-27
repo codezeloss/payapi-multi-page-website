@@ -1,11 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
-import CTAInput from "./Input";
+import Input from "./Input";
 import phoneMockup from "/assets/home/desktop/illustration-phone-mockup.png";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <section className="customSpace flex gap-[206px] items-center mb-[75px]">
+    <motion.section
+      className="customSpace flex gap-[206px] items-center mb-[75px]"
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+    >
       <div className="max-w-[546px]">
         <div>
           <h1 className="mb-[21px] h-[243px]">
@@ -14,7 +24,7 @@ const Header = () => {
         </div>
 
         <div className="mb-[16px]">
-          <CTAInput />
+          <Input />
         </div>
 
         <div>
@@ -36,7 +46,7 @@ const Header = () => {
           alt="Phone mockup"
         />
       </div>
-    </section>
+    </motion.section>
   );
 };
 

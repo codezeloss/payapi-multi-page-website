@@ -1,11 +1,19 @@
 import Image from "next/image";
 import codeAPI from "/assets/home/desktop/illustration-easy-to-implement.png";
 import twoPhones from "/assets/home/desktop/illustration-simple-ui.png";
+import { motion } from "framer-motion";
 
 const Details = () => {
   return (
     <div className="customSpace mb-[150px]">
-      <section className="flex items-center mb-[150px] gap-[125px]">
+      <motion.section className="flex items-center mb-[150px] gap-[125px]"
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}>
         <div className="w-[445px] h-[281px]">
           <Image
             className="w-fit h-fit"
@@ -24,9 +32,16 @@ const Details = () => {
             payments functionality with ease.
           </p>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="flex items-center gap-[95px]">
+      <motion.section className="flex items-center gap-[95px]"
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}>
         <div className="w-[445px]">
           <h3 className="mb-[24px]">Simple UI & UX</h3>
           <p className="ptext">
@@ -44,7 +59,7 @@ const Details = () => {
             height="500px"
           />
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };
