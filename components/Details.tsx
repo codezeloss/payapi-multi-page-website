@@ -14,6 +14,7 @@ const Details = () => {
             alt="Code exmaple"
             width="445px"
             height="281px"
+            priority
           />
         </div>
 
@@ -61,6 +62,7 @@ const Details = () => {
             alt="Two phones"
             width="566px"
             height="500px"
+            priority
           />
         </motion.div>
       </section>
