@@ -202,7 +202,7 @@ const Form = () => {
               type="checkbox"
             />
           </div>
-          <p className="ptext max-w-[395]">
+          <p className="ptext max-w-[395] text-sj-blue">
             Stay up-to-date with company announcements and updates to our API
           </p>
         </div>
