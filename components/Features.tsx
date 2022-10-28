@@ -9,7 +9,7 @@ const Features = () => {
       <div
       >
         <Feature
-          image={finances}
+          image={finances ? finances : ""}
           title="Personal Finances"
           text="Consolidate financial data from multiple sources and categorize transactions up to 2 years of history. Analyze reports to reconcile activities in your account."
         />
@@ -18,7 +18,7 @@ const Features = () => {
       <div
       >
         <Feature
-          image={coverage}
+          image={coverage ? coverage : ""}
           title="Banking & Coverage"
           text="With our platform, you can speed up account onboarding and support ongoing payments for checking, savings, credit card, and brokerage accounts."
         />
@@ -27,7 +27,7 @@ const Features = () => {
       <div
       >
         <Feature
-          image={payments}
+          image={payments ? payments : ""}
           title="Consumer Payments"
           text="It’s easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers could instantly authenticate their account."
         />
