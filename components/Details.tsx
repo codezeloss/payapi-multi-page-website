@@ -6,16 +6,7 @@ import { motion } from "framer-motion";
 const Details = () => {
   return (
     <div className="customSpace mb-[150px] 2bp:mb-[100px]">
-      <motion.section
-        className="flex items-center mb-[150px] gap-[125px] 1bp:gap-[70px] 2bp:flex-col 2bp:gap-[48px] 2bp:mb-[100px]"
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.8,
-          delay: 0.5,
-          ease: [0, 0.71, 0.2, 1.01],
-        }}
-      >
+      <section className="flex items-center mb-[150px] gap-[125px] 1bp:gap-[70px] 2bp:flex-col 2bp:gap-[48px] 2bp:mb-[100px]">
         <div className="w-[445px] h-[281px] 1bp:w-[391.73px] 1bp:h-[250px] 3bp:w-[328px] 3bp:h-[209px]">
           <Image
             className="w-fit h-fit"
@@ -26,26 +17,26 @@ const Details = () => {
           />
         </div>
 
-        <div className="w-[445px] 2bp:text-center 2bp:w-[573px] 3bp:w-[100%]">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="w-[445px] 2bp:text-center 2bp:w-[573px] 3bp:w-[100%]"
+        >
           <h3 className="mb-[24px]">Easy to implement</h3>
           <p className="ptext text-lightsj-blue">
             Our API comes with just a few lines of code. You’ll be up and
             running in no time. We built our documentation page to integrate
             payments functionality with ease.
           </p>
-        </div>
-      </motion.section>
+        </motion.div>
+      </section>
 
-      <motion.section
-        className="flex items-center gap-[95px] 1bp:gap-[70px] 2bp:flex-col-reverse 2bp:gap-[48px] relative"
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.8,
-          delay: 0.5,
-          ease: [0, 0.71, 0.2, 1.01],
-        }}
-      >
+      <section className="flex items-center gap-[95px] 1bp:gap-[70px] 2bp:flex-col-reverse 2bp:gap-[48px] relative">
         <div className="w-[445px] 2bp:text-center 2bp:w-[573px] 3bp:w-[100%]">
           <h3 className="mb-[24px]">Simple UI & UX</h3>
           <p className="ptext text-lightsj-blue">
@@ -54,7 +45,16 @@ const Details = () => {
           </p>
         </div>
 
-        <div className="w-[566px] h-[500px] 1bp:w-[363px] 1bp:h-[320px] 3bp:w-[328px] 3bp:h-[290px]">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="w-[566px] h-[500px] 1bp:w-[363px] 1bp:h-[320px] 3bp:w-[328px] 3bp:h-[290px]"
+        >
           <Image
             className="w-fit h-fit"
             src={twoPhones}
@@ -62,8 +62,8 @@ const Details = () => {
             width="566px"
             height="500px"
           />
-        </div>
-      </motion.section>
+        </motion.div>
+      </section>
     </div>
   );
 };
