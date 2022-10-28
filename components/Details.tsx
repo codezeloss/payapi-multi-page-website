@@ -28,7 +28,7 @@ const Details = () => {
 
         <div className="w-[445px] 2bp:text-center 2bp:w-[573px] 3bp:w-[100%]">
           <h3 className="mb-[24px]">Easy to implement</h3>
-          <p className="ptext">
+          <p className="ptext text-lightsj-blue">
             Our API comes with just a few lines of code. You’ll be up and
             running in no time. We built our documentation page to integrate
             payments functionality with ease.
@@ -48,7 +48,7 @@ const Details = () => {
       >
         <div className="w-[445px] 2bp:text-center 2bp:w-[573px] 3bp:w-[100%]">
           <h3 className="mb-[24px]">Simple UI & UX</h3>
-          <p className="ptext">
+          <p className="ptext text-lightsj-blue">
             Our pre-built form is easy to integrate in your app or website’s
             checkout flow and designed to optimize conversion.
           </p>
