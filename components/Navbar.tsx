@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <div className="customSpace flex justify-between items-center mt-[45px] mb-[74px] 2bp:mb-[48px] 4bp:mt-[40px]">
       <div className="flex items-center space-x-[64.34px]">
-        <Link href="/">
+        <Link href="/" passHref>
           <Image
             className="cursor-pointer"
             src={logo}
@@ -32,7 +32,7 @@ const Navbar = () => {
         </Link>
 
         <div className="font-public-sans font-bold text-[15px] leading-[18px] text-sj-blue/[.7] flex space-x-[40px] 3bp:hidden">
-          <Link href="/pricing">
+          <Link href="/pricing" passHref>
             <a
               className={`hover:text-sj-blue ${
                 currentRoute === "/pricing" ? "text-sj-blue" : ""
@@ -41,7 +41,7 @@ const Navbar = () => {
               Pricing
             </a>
           </Link>
-          <Link href="/about">
+          <Link href="/about" passHref>
             <a
               className={`hover:text-sj-blue ${
                 currentRoute === "/about" ? "text-sj-blue" : ""
@@ -50,7 +50,7 @@ const Navbar = () => {
               About
             </a>
           </Link>
-          <Link href="/contact">
+          <Link href="/contact" passHref>
             <a
               className={`hover:text-sj-blue ${
                 currentRoute === "/contact" ? "text-sj-blue" : ""

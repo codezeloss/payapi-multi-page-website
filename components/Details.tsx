@@ -10,7 +10,7 @@ const Details = () => {
         <div className="w-[445px] h-[281px] 1bp:w-[391.73px] 1bp:h-[250px] 3bp:w-[328px] 3bp:h-[209px]">
           <Image
             className="w-fit h-fit"
-            src={codeAPI}
+            src={codeAPI ? codeAPI : ""}
             alt="Code exmaple"
             width="445px"
             height="281px"
@@ -57,7 +57,7 @@ const Details = () => {
         >
           <Image
             className="w-fit h-fit"
-            src={twoPhones}
+            src={twoPhones ? twoPhones : ""}
             alt="Two phones"
             width="566px"
             height="500px"
