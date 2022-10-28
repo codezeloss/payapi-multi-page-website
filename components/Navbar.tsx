@@ -28,6 +28,7 @@ const Navbar = () => {
             alt="Payapi logo"
             width="135px"
             height="38px"
+            priority
           />
         </Link>
 

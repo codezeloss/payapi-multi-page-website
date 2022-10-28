@@ -7,50 +7,28 @@ import hp from "/assets/shared/desktop/hewlett-packard.svg";
 import oracle from "/assets/shared/desktop/oracle.svg";
 import google from "/assets/shared/desktop/google.svg";
 import nvidia from "/assets/shared/desktop/nvidia.svg";
-import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <section>
       <div className="customSpace">
-        <motion.div
+        <div
           className="h-[100%] 1bp:h-[178px] inline"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.8,
-            delay: 0.5,
-            ease: [0, 0.71, 0.2, 1.01],
-          }}
         >
           <h2 className="max-w-[730px] h-fit mb-[43px] 1bp:mx-auto 1bp:text-center 2bp:max-w-[458px]">
             Submit a help request and we’ll get in touch shortly.
           </h2>
-        </motion.div>
+        </div>
 
         <div className="flex mb-[93px] gap-[124px] items-center 1bp:flex-col 1bp:gap-[70px]">
-          <motion.div
+          <div
             className="h-[100%]"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.8,
-              delay: 0.5,
-              ease: [0, 0.71, 0.2, 1.01],
-            }}
           >
             <Form />
-          </motion.div>
+          </div>
 
-          <motion.div
+          <div
             className="max-w-[541px]"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.8,
-              delay: 0.5,
-              ease: [0, 0.71, 0.2, 1.01],
-            }}
           >
             <h5 className="mb-[40px] max-w-[445px] 1bp:text-center 1bp:max-w-[100%]">
               Join the thousands of innovators already building with us
@@ -115,22 +93,15 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
 
-      <motion.div
+      <div
         className="h-[100%]"
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.8,
-          delay: 0.5,
-          ease: [0, 0.71, 0.2, 1.01],
-        }}
       >
         <UserCTA />
-      </motion.div>
+      </div>
     </section>
   );
 };

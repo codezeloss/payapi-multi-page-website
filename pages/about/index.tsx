@@ -2,33 +2,19 @@ import Image from "next/image";
 import UserCTA from "../../components/UserCTA";
 import Stats from "../../components/Stats";
 import team from "/assets/about/desktop/image-team-members.jpg";
-import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div>
       <section className="customSpace">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.5, ease: [0, 0.71, 0.2, 1.01] }}
-        >
+        <div>
           <h2 className="max-w-[644px] h-[189px] mb-[51px] 2bp:text-center 2bp:mx-auto 2bp:max-w-[537px] 3bp:h-[100%]">
             We empower innovators by delivering access to the financial system
           </h2>
-        </motion.div>
+        </div>
 
         <div className="space-y-[56px] mb-[100px] 3bp:mb-[76px]">
-          <motion.div
-            className="flex flex-row justify-between 3bp:flex-col 3bp:text-center"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.8,
-              delay: 0.5,
-              ease: [0, 0.71, 0.2, 1.01],
-            }}
-          >
+          <div className="flex flex-row justify-between 3bp:flex-col 3bp:text-center">
             <div className="2bp:min-w-[220px]">
               <h4 className="text-sj-blue">Our Vision</h4>
             </div>
@@ -41,18 +27,9 @@ const About = () => {
                 on democratizing financial services through technology.
               </p>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="flex flex-row justify-between 3bp:flex-col 3bp:text-center"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.8,
-              delay: 0.5,
-              ease: [0, 0.71, 0.2, 1.01],
-            }}
-          >
+          <div className="flex flex-row justify-between 3bp:flex-col 3bp:text-center">
             <div className="2bp:min-w-[220px]">
               <h4 className="text-sj-blue">Our Business</h4>
             </div>
@@ -64,16 +41,11 @@ const About = () => {
                 reporting for traditional financial institutions and developers.
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
-      <motion.div
-        className="w-fit mx-auto mb-[72px]"
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8, delay: 0.5, ease: [0, 0.71, 0.2, 1.01] }}
-      >
+      <div className="w-fit mx-auto mb-[72px]">
         <Image
           className=""
           src={team}
@@ -81,33 +53,16 @@ const About = () => {
           width="1440px"
           height="500px"
         />
-      </motion.div>
+      </div>
 
       <section>
         <div className="customSpace">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.8,
-              delay: 0.5,
-              ease: [0, 0.71, 0.2, 1.01],
-            }}
-          >
+          <div>
             <Stats />
-          </motion.div>
+          </div>
 
           <div className="space-y-[56px] mb-[100px] 3bp:mb-[76px]">
-            <motion.div
-              className="flex flex-row justify-between 3bp:flex-col 3bp:text-center"
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.5,
-                ease: [0, 0.71, 0.2, 1.01],
-              }}
-            >
+            <div className="flex flex-row justify-between 3bp:flex-col 3bp:text-center">
               <div className="2bp:min-w-[220px]">
                 <h4 className="text-sj-blue">The Culture</h4>
               </div>
@@ -120,18 +75,9 @@ const About = () => {
                   diversity of thought, no matter the job title.
                 </p>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              className="flex flex-row justify-between 3bp:flex-col 3bp:text-center"
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{
-                duration: 0.8,
-                delay: 0.5,
-                ease: [0, 0.71, 0.2, 1.01],
-              }}
-            >
+            <div className="flex flex-row justify-between 3bp:flex-col 3bp:text-center">
               <div className="2bp:min-w-[220px]">
                 <h4 className="text-sj-blue">The People</h4>
               </div>
@@ -142,17 +88,13 @@ const About = () => {
                   have diverse backgrounds and skills.
                 </p>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.5, ease: [0, 0.71, 0.2, 1.01] }}
-        >
+        <div>
           <UserCTA />
-        </motion.div>
+        </div>
       </section>
     </div>
   );
