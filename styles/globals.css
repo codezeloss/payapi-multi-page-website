@@ -29,7 +29,7 @@ a {
   }
 
   h2 {
-    @apply text-[56px] font-dm-serif font-normal leading-[56px] tracking-[-0.430769px] text-sj-blue 2bp:text-[48px];
+    @apply text-[56px] font-dm-serif font-normal leading-[56px] tracking-[-0.430769px] text-sj-blue 2bp:text-[48px] 3bp:text-[32px] 3bp:leading-[36px];
   }
 
   h3 {

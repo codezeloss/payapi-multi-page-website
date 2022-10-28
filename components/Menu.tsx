@@ -63,9 +63,11 @@ const Menu = ({ showMenu }: Props) => {
         </Link>
       </div>
 
-      <div className="w-fit mx-auto" onClick={showMenu}>
-        <CTAButton />
-      </div>
+      <Link href="/">
+        <div className="w-[100%] mx-auto" onClick={showMenu}>
+          <CTAButton />
+        </div>
+      </Link>
     </div>
   );
 };

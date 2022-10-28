@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <div className="bg-mirage-blue">
-      <div className="customSpace py-[31px] flex items-center justify-between 3bp:flex-col 3bp:gap-[40px]">
+      <div className="customSpace py-[31px] flex items-center justify-between 3bp:flex-col 3bp:gap-[40px] 3bp:py-[41px]">
         <div className="flex items-center space-x-[64.34px] 3bp:flex-col 3bp:space-x-0">
           <Link href="/">
             <Image

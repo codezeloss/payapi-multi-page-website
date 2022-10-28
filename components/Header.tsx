@@ -18,7 +18,7 @@ const Header = () => {
     >
       <div className="max-w-[546px] 2bp:flex 2bp:flex-col 2bp:justify-center">
         <div>
-          <h1 className="mb-[21px] h-[100%]">
+          <h1 className="mb-[21px] h-[100%] 3bp:mb-[24px]">
             Start building with our APIs for absolutely free.
           </h1>
         </div>

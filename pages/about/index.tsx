@@ -13,12 +13,12 @@ const About = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.5, ease: [0, 0.71, 0.2, 1.01] }}
         >
-          <h2 className="max-w-[644px] h-[189px] mb-[51px] 2bp:text-center 2bp:mx-auto 2bp:max-w-[537px]">
+          <h2 className="max-w-[644px] h-[189px] mb-[51px] 2bp:text-center 2bp:mx-auto 2bp:max-w-[537px] 3bp:h-[100%]">
             We empower innovators by delivering access to the financial system
           </h2>
         </motion.div>
 
-        <div className="space-y-[56px] mb-[100px]">
+        <div className="space-y-[56px] mb-[100px] 3bp:mb-[76px]">
           <motion.div
             className="flex flex-row justify-between 3bp:flex-col 3bp:text-center"
             initial={{ opacity: 0, scale: 0.5 }}
@@ -97,7 +97,7 @@ const About = () => {
             <Stats />
           </motion.div>
 
-          <div className="space-y-[56px] mb-[100px]">
+          <div className="space-y-[56px] mb-[100px] 3bp:mb-[76px]">
             <motion.div
               className="flex flex-row justify-between 3bp:flex-col 3bp:text-center"
               initial={{ opacity: 0, scale: 0.5 }}

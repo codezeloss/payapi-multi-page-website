@@ -105,7 +105,7 @@ const Form = () => {
   };
 
   return (
-    <div className="w-[445px]">
+    <div className="w-[445px] 4bp:w-[100%]">
       <form
         className="flex flex-col gap-[24px]"
         onSubmit={formSubmissionHandler}

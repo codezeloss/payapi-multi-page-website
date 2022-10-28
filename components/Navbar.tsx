@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="customSpace flex justify-between items-center mt-[45px] mb-[152px] 2bp:mb-[48px]">
+    <div className="customSpace flex justify-between items-center mt-[45px] mb-[152px] 2bp:mb-[48px] 4bp:mt-[40px]">
       <div className="flex items-center space-x-[64.34px]">
         <Link href="/">
           <Image
