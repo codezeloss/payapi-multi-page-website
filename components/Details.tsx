@@ -37,7 +37,7 @@ const Details = () => {
       </motion.section>
 
       <motion.section
-        className="flex items-center gap-[95px] 1bp:gap-[70px] 2bp:flex-col-reverse 2bp:gap-[48px]"
+        className="flex items-center gap-[95px] 1bp:gap-[70px] 2bp:flex-col-reverse 2bp:gap-[48px] relative"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{

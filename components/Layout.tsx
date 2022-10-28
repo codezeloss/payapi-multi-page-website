@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
@@ -9,13 +10,13 @@ const Layout = ({ children }: Props) => {
   return (
     <div>
       <nav>
-        <Navbar/>
+        <Navbar />
       </nav>
 
       <main>{children}</main>
 
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </div>
   );
