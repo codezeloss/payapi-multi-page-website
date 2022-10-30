@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import UserCTA from "../../components/UserCTA";
 import Form from "../../components/Form";
@@ -11,25 +12,25 @@ import nvidia from "/assets/shared/desktop/nvidia.svg";
 const Contact = () => {
   return (
     <section>
+      <Head>
+        <title>Contact</title>
+        <meta name="description" content="Contact page" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <div className="customSpace">
-        <div
-          className="h-[100%] 1bp:h-[178px] inline"
-        >
+        <div className="h-[100%] 1bp:h-[178px] inline">
           <h2 className="max-w-[730px] h-fit mb-[43px] 1bp:mx-auto 1bp:text-center 2bp:max-w-[458px]">
             Submit a help request and we’ll get in touch shortly.
           </h2>
         </div>
 
         <div className="flex mb-[93px] gap-[124px] items-center 1bp:flex-col 1bp:gap-[70px]">
-          <div
-            className="h-[100%]"
-          >
+          <div className="h-[100%]">
             <Form />
           </div>
 
-          <div
-            className="max-w-[541px]"
-          >
+          <div className="max-w-[541px]">
             <h5 className="mb-[40px] max-w-[445px] 1bp:text-center 1bp:max-w-[100%]">
               Join the thousands of innovators already building with us
             </h5>
@@ -97,9 +98,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div
-        className="h-[100%]"
-      >
+      <div className="h-[100%]">
         <UserCTA />
       </div>
     </section>

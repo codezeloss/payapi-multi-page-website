@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import UserCTA from "../../components/UserCTA";
 import Stats from "../../components/Stats";
@@ -6,6 +7,12 @@ import team from "/assets/about/desktop/image-team-members.jpg";
 const About = () => {
   return (
     <div>
+      <Head>
+        <title>About</title>
+        <meta name="description" content="About page" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <section className="customSpace">
         <div>
           <h2 className="max-w-[644px] h-[189px] mb-[51px] 2bp:text-center 2bp:mx-auto 2bp:max-w-[537px] 3bp:h-[100%]">
