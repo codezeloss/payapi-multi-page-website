@@ -23,7 +23,7 @@ const Header = () => {
           <p className="ptext ml-[27px] text-lightsj-blue 2bp:ml-0 2bp:text-center">
             Have any questions?{" "}
             <span>
-              <Link href="/contact">
+              <Link href="/contact" passHref>
                 <a className="font-bold">Contact Us</a>
               </Link>
             </span>

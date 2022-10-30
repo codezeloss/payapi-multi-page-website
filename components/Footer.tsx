@@ -21,6 +21,7 @@ const Footer = () => {
               alt="Payapi logo"
               width="135px"
               height="38px"
+              priority
             />
           </Link>
 
@@ -63,6 +64,7 @@ const Footer = () => {
               alt="Facebook"
               width="24px"
               height="24px"
+              priority
             />
           </div>
           <div>
@@ -72,6 +74,7 @@ const Footer = () => {
               alt="Twitter"
               width="24px"
               height="19.5px"
+              priority
             />
           </div>
           <div>
@@ -81,6 +84,7 @@ const Footer = () => {
               alt="Linkedin"
               width="24px"
               height="24px"
+              priority
             />
           </div>
         </div>
